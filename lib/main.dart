@@ -1,5 +1,6 @@
 import 'package:fisiotec1/login.dart';
 import 'package:flutter/material.dart';
+//iphone  xr 
 void main() {
   runApp(const MyApp());
 }

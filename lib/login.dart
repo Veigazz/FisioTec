@@ -71,7 +71,7 @@ class Mylogin extends StatelessWidget {
                   SizedBox(height: 15),
                   ElevatedButton(
                     style: ButtonStyle(
-                      minimumSize:MaterialStateProperty.all(Size(4000, 40)),
+                      minimumSize: MaterialStateProperty.all(Size(4000, 40)),
                       shape: MaterialStateProperty.all(
                         RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30.0),
@@ -79,7 +79,7 @@ class Mylogin extends StatelessWidget {
                       )
                     ),
                     onPressed: () {
-                      if (email == "lucasvasstivensom@gmail.com" &&senha == "123") {
+                      if (email == "admin" &&senha == "123") {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(
                             builder: (context) => MyHomePage(),

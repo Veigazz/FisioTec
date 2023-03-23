@@ -62,6 +62,18 @@ flutter:
 assets:
   - assets/logo.png
   - assets/fisiotecvertical.png
+  - assets/veiga.png
+  - elev_latt.jpg
+  - flex_lat.jpg
+  - agacha_.jpg
+  - .jpg
+  - ext_tronco.jpg
+  - lev_torn.jpg
+  - ponte.jpg
+  - pran_iso.png
+  - rot_torn.jpg
+  - prece.jpg
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

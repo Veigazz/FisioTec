@@ -28,108 +28,110 @@ class MyRegister extends StatelessWidget {
             height: double.infinity,
             child: Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Column(
-                children: [
-                  SizedBox(height: 50),
-                  Image(image: AssetImage("fisiotecvertical.png")),
-                  SizedBox(height: 30),
-                  Text(
-                    "Apenas um passo de uma melhor qualidade de vida!",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 15
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    SizedBox(height: 50),
+                    Image(image: AssetImage("fisiotecvertical.png")),
+                    SizedBox(height: 30),
+                    Text(
+                      "Apenas um passo de uma melhor qualidade de vida!",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 15
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 150),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Email",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Nome completo",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Nome de usuário",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Idade",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (value) {},
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Senha",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 20),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      minimumSize:MaterialStateProperty.all(Size(4000, 40)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+                    SizedBox(height: 150),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Email",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
                         )
                       )
                     ),
-                    onPressed: () {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => MyHomePage(),
+                    SizedBox(height: 10),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Nome completo",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
                         )
-                      );
-                    }, 
-                    child: Text("Conecte-se")
-                  )
-                ]
+                      )
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Nome de usuário",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        )
+                      )
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Idade",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        )
+                      )
+                    ),
+                    SizedBox(height: 10),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Senha",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        )
+                      )
+                    ),
+                    SizedBox(height: 20),
+                    ElevatedButton(
+                      style: ButtonStyle(
+                        minimumSize:MaterialStateProperty.all(Size(4000, 40)),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          )
+                        )
+                      ),
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (context) => MyHomePage(),
+                          )
+                        );
+                      }, 
+                      child: Text("Conecte-se")
+                    )
+                  ]
+                ),
               ),
             ),
           ),

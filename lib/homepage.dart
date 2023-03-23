@@ -14,31 +14,28 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
-        title: Row(
-          children: [
-            Icon(
-              Icons.circle_outlined,
-              color: Colors.purple,
+        title: ListTile(
+          leading: Icon(
+            Icons.circle_outlined,
+            color: Colors.purple,
+          ), 
+          title: Text(
+            "Lucas Veiga, 17",
+            style: TextStyle(
+              color: Colors.black,
+              fontStyle: FontStyle.italic,
+              fontSize: 17
             ),
-            SizedBox(width: 10),
-            Text(
-              "Lucas Veiga, 17",
-              style: TextStyle(
-                color: Colors.black,
-                fontStyle: FontStyle.italic,
-                fontSize: 17
-              ),
-            ),
-            SizedBox(width: 180),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(25.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.purple,
-                    width: 1,
-                  ),
-                  borderRadius: BorderRadius.circular(25.0)
+          ),
+          trailing: ClipRRect(
+            borderRadius: BorderRadius.circular(25.0),
+            child: Container(
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.purple,
+                  width: 1,
+                ),
+                borderRadius: BorderRadius.circular(25.0)
                 ),
                 child: Image(
                   image: AssetImage(
@@ -49,9 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   fit: BoxFit.cover,
                 ),
               )
-            )
-          ],
-        ),
+            ),
+        ) 
+        
       ),
       body: ListView(
         children: [

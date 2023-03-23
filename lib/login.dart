@@ -32,94 +32,99 @@ class Mylogin extends StatelessWidget {
             height: double.infinity,
             child: Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Column(
-                children: [
-                  Image(image: AssetImage("logo.png")),
-                  SizedBox(height: 100),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (text) {
-                      email = text;
-                    },
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Nome de usuário ou Email",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 10),
-                  TextField(
-                    style: TextStyle(color: Colors.black),
-                    onChanged: (text) {
-                      senha = text;
-                    },
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      labelStyle: TextStyle(color: Colors.grey),
-                      labelText: "Senha",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50),
-                      )
-                    )
-                  ),
-                  SizedBox(height: 15),
-                  ElevatedButton(
-                    style: ButtonStyle(
-                      minimumSize: MaterialStateProperty.all(Size(4000, 40)),
-                      shape: MaterialStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(30.0),
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Image(image: AssetImage("logo.png")),
+                    SizedBox(height: 100),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (text) {
+                        email = text;
+                      },
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Nome de usuário ou Email",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
                         )
                       )
                     ),
-                    onPressed: () {
-                      if (email == "admin" &&senha == "123") {
-                        Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(
-                            builder: (context) => MyHomePage(),
+                    SizedBox(height: 10),
+                    TextField(
+                      style: TextStyle(color: Colors.black),
+                      onChanged: (text) {
+                        senha = text;
+                      },
+                      obscureText: true,
+                      decoration: InputDecoration(
+                        filled: true,
+                        fillColor: Colors.white,
+                        labelStyle: TextStyle(color: Colors.grey),
+                        labelText: "Senha",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        )
+                      )
+                    ),
+                    SizedBox(height: 15),
+                    ElevatedButton(
+                      style: ButtonStyle(
+                        minimumSize: MaterialStateProperty.all(Size(4000, 40)),
+                        shape: MaterialStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
                           )
-                        );
-                        } else {                       
-                            print("Longin inválido, tente novamente");
-                        }
-                    },
-                    child: Text("Conecte-se")
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(height: 70),
-                      Text(
-                        "Não possui uma conta?",
-                        style: TextStyle(color: Colors.white),
+                        )
                       ),
-                      SizedBox(width: 20),
-                      ElevatedButton(
-                        style: ButtonStyle(
-                          shape: MaterialStateProperty.all(
-                            RoundedRectangleBorder(
-                              borderRadius:BorderRadius.circular(30.0)
-                            )
-                          )
-                        ),
-                        onPressed: () {
-                          Navigator.of(context).push(
+                      onPressed: () {
+                        if (email == "admin" &&senha == "123") {
+                          Navigator.of(context).pushReplacement(
                             MaterialPageRoute(
-                              builder: (context) => MyRegister()
+                              builder: (context) => MyHomePage(),
                             )
                           );
-                        },
-                        child: Text("Registre-se")
-                      )
-                    ],
-                  ),
-                ],
+                          } else {                       
+                              print("Longin inválido, tente novamente");
+                          }
+                      },
+                      child: Text("Conecte-se")
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 70),
+                          Text(
+                            "Não possui uma conta?",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          SizedBox(width: 20),
+                          ElevatedButton(
+                            style: ButtonStyle(
+                              shape: MaterialStateProperty.all(
+                                RoundedRectangleBorder(
+                                  borderRadius:BorderRadius.circular(30.0)
+                                )
+                              )
+                            ),
+                            onPressed: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => MyRegister()
+                                )
+                              );
+                            },
+                            child: Text("Registre-se")
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           )

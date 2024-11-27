@@ -1,16 +1,15 @@
-# fisiotec1
+# FisioTec
+O FisioTec é um aplicativo voltado para a área da saúde, com o objetivo de auxiliar na realização de exercícios fisioterapêuticos. Ele permite que os usuários pratiquem exercícios em qualquer ambiente, sem a necessidade de acompanhamento presencial, promovendo uma recuperação mais acessível e prática.
 
-A new Flutter project.
+Este foi meu primeiro projeto de desenvolvimento, criado após apenas 3 meses de aprendizado na escola técnica QI de Alvorada. Iniciei este projeto sem nunca ter programado antes, o que torna o FisioTec um marco importante na minha jornada como desenvolvedor.
 
-## Getting Started
+Este projeto é apenas o frontend, focado em interfaces e prototipagem inicial, sem integração com backend ou banco de dados.
 
-This project is a starting point for a Flutter application.
+## Tecnologias:
+Desenvolvimento em Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+Design e prototipagem com Canva.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Arquivo PDF da apresentação do projeto
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[FisioTec.pdf](https://github.com/user-attachments/files/17937079/FisioTec.pdf)
